@@ -19,8 +19,8 @@ const Header = () => {
               <a href="#pricing" className="text-foreground hover:text-primary transition-smooth">
                 Pricing
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-smooth">
-                Contact
+              <a href="#company" className="text-foreground hover:text-primary transition-smooth">
+                Company
               </a>
             </nav>
           </div>

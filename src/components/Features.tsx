@@ -5,33 +5,18 @@ const Features = () => {
   const features = [
     {
       icon: <Zap className="h-8 w-8 text-primary" />,
-      title: "Automated Testing",
+      title: "Automated Control Testing",
       description: "Eliminate manual control testing with intelligent automation that scales with your compliance needs."
     },
     {
-      icon: <Shield className="h-8 w-8 text-primary" />,
-      title: "Multi-Framework Support",
-      description: "Works with SOX, COSO, ISO 27001, and other regulatory frameworks out of the box."
+      icon: <Settings className="h-8 w-8 text-primary" />,
+      title: "Configurable Control Procedures",
+      description: "Customize testing procedures and criteria to match your specific compliance requirements."
     },
     {
       icon: <Plug className="h-8 w-8 text-primary" />,
       title: "Seamless Integration",
       description: "Deploy standalone or integrate with existing audit management and GRC platforms."
-    },
-    {
-      icon: <BarChart3 className="h-8 w-8 text-primary" />,
-      title: "Real-time Analytics",
-      description: "Get instant insights into control effectiveness and compliance status across your organization."
-    },
-    {
-      icon: <Settings className="h-8 w-8 text-primary" />,
-      title: "Configurable Controls",
-      description: "Customize testing procedures and criteria to match your specific compliance requirements."
-    },
-    {
-      icon: <Clock className="h-8 w-8 text-primary" />,
-      title: "Continuous Monitoring",
-      description: "24/7 automated monitoring ensures controls remain effective and compliant over time."
     }
   ];
 
