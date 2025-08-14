@@ -25,7 +25,7 @@ const CTA = () => {
           </div>
           
           <div className="pt-8 text-sm opacity-75">
-            <p>✓ 30-day free trial  ✓ No credit card required  ✓ Enterprise support available</p>
+            <p>✓ 7 days free trial  ✓ Enterprise support available</p>
           </div>
         </div>
       </div>

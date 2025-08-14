@@ -31,11 +31,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">30-day free trial</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
-                <span className="text-sm text-muted-foreground">No credit card required</span>
+                <span className="text-sm text-muted-foreground">7 days free trial</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-primary" />
