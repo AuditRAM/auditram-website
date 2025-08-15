@@ -66,7 +66,6 @@ const Company = () => {
                       </Button>
                     }
                     title="Schedule a Demo"
-                    isDemo={true}
                   />
                 </div>
               </div>
