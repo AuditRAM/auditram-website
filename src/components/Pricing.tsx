@@ -22,7 +22,7 @@ const Pricing = () => {
                 Per Control Test
               </CardTitle>
               <div className="text-5xl font-bold text-primary mb-4">
-                $89
+                $99
               </div>
               <p className="text-muted-foreground">
                 Flat rate per automated control test execution
@@ -32,15 +32,19 @@ const Pricing = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">AI recommendations for sample attributes and test procedures</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
                   <span className="text-foreground">Automated test execution</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Detailed compliance reporting</span>
+                  <span className="text-foreground">Workplan generation</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Multi-framework support</span>
+                  <span className="text-foreground">10 user accounts for standalone application</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />

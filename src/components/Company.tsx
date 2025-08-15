@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Phone } from "lucide-react";
+import ContactDialog from "@/components/ContactDialog";
 
 const Company = () => {
   return (
@@ -45,38 +45,29 @@ const Company = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground">contact@auditram.com</p>
-                  </div>
-                </div>
+                <p className="text-muted-foreground">
+                  Ready to transform your control testing process? Get in touch with our team to learn how AuditRAM can streamline your compliance workflows.
+                </p>
                 
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium text-foreground">Phone</p>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                  </div>
+                <div className="space-y-3">
+                  <ContactDialog
+                    trigger={
+                      <Button variant="outline" className="w-full" size="lg">
+                        Contact Us
+                      </Button>
+                    }
+                    title="Contact AuditRAM"
+                  />
+                  
+                  <ContactDialog
+                    trigger={
+                      <Button className="w-full" size="lg">
+                        Schedule a Demo
+                      </Button>
+                    }
+                    title="Schedule a Demo"
+                  />
                 </div>
-                
-                <div className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium text-foreground">Address</p>
-                    <p className="text-muted-foreground">
-                      123 Business District<br />
-                      San Francisco, CA 94105
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="pt-4">
-                <Button className="w-full" size="lg">
-                  Schedule a Demo
-                </Button>
               </div>
               
               <div className="text-center text-sm text-muted-foreground">
