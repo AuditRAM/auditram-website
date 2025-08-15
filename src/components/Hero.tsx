@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import ContactDialog from "@/components/ContactDialog";
 
 const Hero = () => {
   return (
@@ -23,9 +24,15 @@ const Hero = () => {
               <Button variant="hero" size="lg">
                 Start Free Trial
               </Button>
-              <Button variant="outline-hero" size="lg">
-                Schedule Demo
-              </Button>
+              <ContactDialog
+                trigger={
+                  <Button variant="outline-hero" size="lg">
+                    Schedule a Demo
+                  </Button>
+                }
+                title="Schedule a Demo"
+                isDemo={true}
+              />
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
