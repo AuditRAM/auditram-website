@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import ContactDialog from "@/components/ContactDialog";
 
 const CTA = () => {
   return (
@@ -19,9 +20,15 @@ const CTA = () => {
               Start Free Trial
               <ArrowRight className="h-5 w-5 ml-2" />
             </Button>
-            <Button variant="outline-hero" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
-              Schedule Consultation
-            </Button>
+            <ContactDialog
+              trigger={
+                <Button variant="outline-hero" size="lg" className="border-white text-white hover:bg-white hover:text-primary transition-smooth">
+                  Schedule a Demo
+                </Button>
+              }
+              title="Schedule a Demo"
+              isDemo={true}
+            />
           </div>
           
           <div className="pt-8 text-sm opacity-75">

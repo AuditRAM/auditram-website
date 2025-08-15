@@ -9,9 +9,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 interface ContactDialogProps {
   trigger: React.ReactNode;
   title: string;
+  isDemo?: boolean;
 }
 
-const ContactDialog = ({ trigger, title }: ContactDialogProps) => {
+const ContactDialog = ({ trigger, title, isDemo = false }: ContactDialogProps) => {
   const [open, setOpen] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -62,17 +63,35 @@ const ContactDialog = ({ trigger, title }: ContactDialogProps) => {
             </Select>
           </div>
           
+          {isDemo && (
+            <div className="space-y-2">
+              <Label htmlFor="preferred-time" className="text-foreground">Preferred Demo Time</Label>
+              <Select required>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select preferred time" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="morning">Morning (9 AM - 12 PM)</SelectItem>
+                  <SelectItem value="afternoon">Afternoon (12 PM - 5 PM)</SelectItem>
+                  <SelectItem value="evening">Evening (5 PM - 8 PM)</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          )}
+          
           <div className="space-y-2">
-            <Label htmlFor="message" className="text-foreground">Message</Label>
+            <Label htmlFor="message" className="text-foreground">
+              {isDemo ? "Additional Notes" : "Message"}
+            </Label>
             <Textarea 
               id="message" 
-              placeholder="Tell us about your control testing needs..."
+              placeholder={isDemo ? "Any specific areas you'd like to focus on during the demo..." : "Tell us about your control testing needs..."}
               className="min-h-[100px]"
             />
           </div>
           
           <Button type="submit" className="w-full">
-            Send Message
+            {isDemo ? "Schedule Demo" : "Send Message"}
           </Button>
         </form>
       </DialogContent>
