@@ -6,7 +6,7 @@ const Features = () => {
     {
       icon: <Brain className="h-8 w-8 text-primary" />,
       title: "Intelligent Test Design",
-      description: "Eliminate the guesswork and manual effort of creating test plans. Our AI analyzes your control statements and instantly generates clear, best-practice test procedures and recommends the precise attributes to examine. Accelerate your audit planning, ensure consistency across teams, and embed expert guidance into every test."
+      description: "Eliminate the guesswork and manual effort of creating test plans. Our AI analyzes your control statements and instantly generates clear, best-practice test procedures and recommends the precise attributes to examine."
     },
     {
       icon: <Zap className="h-8 w-8 text-primary" />,
@@ -16,7 +16,7 @@ const Features = () => {
     {
       icon: <Puzzle className="h-8 w-8 text-primary" />,
       title: "Seamless Integration",
-      description: "Our adaptive architecture is built to enhance, not replace. Bolt on to your existing GRC platform like AuditBoard or Workiva, or use it as a powerful standalone tool. We fit into your ecosystem."
+      description: "Our adaptive architecture is built to enhance, not replace. Bolt on to your existing GRC / audit management platform, or use it as a powerful standalone tool. We fit into your ecosystem."
     }
   ];
 

@@ -14,7 +14,7 @@ const UseCases = () => {
     {
       icon: <Layers className="h-12 w-12 text-primary" />,
       title: "For Audit & Advisory Firms",
-      description: "Combat the talent shortage and boost engagement profitability. Use our platform to standardize testing across your client portfolio, automate evidence collection, and deliver higher-value, more efficient audits.",
+      description: "Combat the talent shortage and boost engagement profitability. Use our platform to standardize testing across your client portfolio and deliver higher-value, more efficient audits.",
       cta: "Learn More for Audit Firms"
     }
   ];

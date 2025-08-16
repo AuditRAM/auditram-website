@@ -33,11 +33,6 @@ const Steps = () => {
           {steps.map((step, index) => (
             <Card key={index} className="shadow-card hover:shadow-elegant transition-smooth text-center">
               <CardHeader className="pb-4">
-                <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-accent rounded-full">
-                    {step.icon}
-                  </div>
-                </div>
                 <div className="flex justify-center items-center gap-3 mb-4">
                   <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold">
                     {index + 1}
