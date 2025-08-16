@@ -11,11 +11,10 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Turn Hours of Control Testing
-                <span className="bg-gradient-primary bg-clip-text text-transparent"> Into Minutes</span>
+                <span className="bg-gradient-primary bg-clip-text text-transparent">Automate Your Control Testing</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-                Our Intelligent Test Automation platform bolts onto your existing GRC system, eliminating manual work and freeing your audit team for high-impact analysis.
+                Test hours of control testing into minutes. Our Intelligent Test Automation platform eliminates manual repetitive work to free-up your audit team for high-impact analysis. Use as a standalone solution or integrate with your existing audit management tools.
               </p>
             </div>
             

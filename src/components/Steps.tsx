@@ -6,12 +6,12 @@ const Steps = () => {
     {
       icon: <Link className="h-8 w-8 text-primary" />,
       title: "Connect",
-      description: "Securely connect to your business systems and GRC platform in minutes."
+      description: "Securely connect to your GRC platform or login to our site."
     },
     {
       icon: <Cog className="h-8 w-8 text-primary" />,
       title: "Automate",
-      description: "Our AI executes control tests on-demand or on a schedule, automatically capturing screenshots and system outputs as audit-ready evidence."
+      description: "Our AI executes control tests on-demand and generates outputs as audit-ready evidence."
     },
     {
       icon: <Shield className="h-8 w-8 text-primary" />,
