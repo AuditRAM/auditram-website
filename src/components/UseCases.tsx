@@ -1,32 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Building2, Layers } from "lucide-react";
+import ContactDialog from "@/components/ContactDialog";
 
 const UseCases = () => {
   const useCases = [
     {
       icon: <Building2 className="h-12 w-12 text-primary" />,
-      title: "Standalone Solution",
-      description: "Deploy AuditRAM as your primary control testing platform with complete audit management capabilities.",
-      features: [
-        "Full audit lifecycle management",
-        "Built-in reporting and dashboards", 
-        "User management and permissions",
-        "Document repository and workflows"
-      ],
-      cta: "Explore Standalone"
+      title: "For Internal Audit & GRC Teams",
+      description: "Free your team from repetitive work, reduce compliance costs, and provide a higher level of assurance to your board. Supercharge your existing GRC investment and transform your audit function into a strategic advisor.",
+      cta: "Learn More for GRC Teams"
     },
     {
       icon: <Layers className="h-12 w-12 text-primary" />,
-      title: "Integration Ready",
-      description: "Seamlessly bolt-on to existing audit management or GRC tools to enhance your current infrastructure.",
-      features: [
-        "API-first architecture",
-        "Pre-built connectors for major platforms",
-        "Custom integration support",
-        "Minimal deployment disruption"
-      ],
-      cta: "View Integrations"
+      title: "For Audit & Advisory Firms",
+      description: "Combat the talent shortage and boost engagement profitability. Use our platform to standardize testing across your client portfolio, automate evidence collection, and deliver higher-value, more efficient audits.",
+      cta: "Learn More for Audit Firms"
     }
   ];
 
@@ -35,12 +24,8 @@ const UseCases = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Flexible Deployment Options
+            Choose Your Path
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Whether you need a complete solution or want to enhance existing tools, 
-            AuditRAM adapts to your organization's unique requirements.
-          </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12">
@@ -60,18 +45,16 @@ const UseCases = () => {
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
-                <ul className="space-y-3">
-                  {useCase.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
                 <div className="pt-4">
-                  <Button variant="outline-hero" className="w-full">
-                    {useCase.cta}
-                  </Button>
+                  <ContactDialog
+                    trigger={
+                      <Button variant="outline-hero" className="w-full">
+                        {useCase.cta}
+                      </Button>
+                    }
+                    title={useCase.cta}
+                    isDemo={false}
+                  />
                 </div>
               </CardContent>
             </Card>

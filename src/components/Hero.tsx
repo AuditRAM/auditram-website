@@ -11,28 +11,27 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Automate Your
-                <span className="bg-gradient-primary bg-clip-text text-transparent"> Control Testing</span>
+                Turn Hours of Control Testing
+                <span className="bg-gradient-primary bg-clip-text text-transparent"> Into Minutes</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-                AuditRAM streamlines regulatory and framework compliance with intelligent automation. 
-                Use as a standalone solution or integrate with your existing audit management tools.
+                Our Intelligent Test Automation platform bolts onto your existing GRC system, eliminating manual work and freeing your audit team for high-impact analysis.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg">
-                Start Free Trial
-              </Button>
               <ContactDialog
                 trigger={
-                  <Button variant="outline-hero" size="lg">
-                    Schedule a Demo
+                  <Button variant="hero" size="lg">
+                    Book a Demo
                   </Button>
                 }
-                title="Schedule a Demo"
+                title="Book a Demo"
                 isDemo={true}
               />
+              <Button variant="outline-hero" size="lg">
+                Watch It Work (2-min video)
+              </Button>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 pt-4">

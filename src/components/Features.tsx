@@ -1,22 +1,22 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Settings, Zap, Shield, BarChart3, Plug, Clock } from "lucide-react";
+import { Brain, Zap, Puzzle } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
+      icon: <Brain className="h-8 w-8 text-primary" />,
+      title: "Intelligent Test Design",
+      description: "Eliminate the guesswork and manual effort of creating test plans. Our AI analyzes your control statements and instantly generates clear, best-practice test procedures and recommends the precise attributes to examine. Accelerate your audit planning, ensure consistency across teams, and embed expert guidance into every test."
+    },
+    {
       icon: <Zap className="h-8 w-8 text-primary" />,
-      title: "Automated Control Testing",
-      description: "Eliminate manual control testing with intelligent automation that scales with your compliance needs."
+      title: "Radical Efficiency",
+      description: "Automate the entire test execution process. Our AI agents perform multi-step procedures just like a human would, but in a fraction of the time. Reclaim thousands of hours and slash your compliance costs."
     },
     {
-      icon: <Settings className="h-8 w-8 text-primary" />,
-      title: "Configurable Control Procedures",
-      description: "Customize testing procedures and criteria to match your specific compliance requirements."
-    },
-    {
-      icon: <Plug className="h-8 w-8 text-primary" />,
+      icon: <Puzzle className="h-8 w-8 text-primary" />,
       title: "Seamless Integration",
-      description: "Deploy standalone or integrate with existing audit management and GRC platforms."
+      description: "Our adaptive architecture is built to enhance, not replace. Bolt on to your existing GRC platform like AuditBoard or Workiva, or use it as a powerful standalone tool. We fit into your ecosystem."
     }
   ];
 
@@ -25,11 +25,10 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Powerful Features for Modern Compliance
+            Stop Drowning in Manual Control Testing
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            AuditRAM combines cutting-edge automation with deep compliance expertise 
-            to transform how organizations approach control testing.
+            Your most skilled auditors and compliance professionals spend countless hours on the necessary, repetitive tasks of manually testing controls and filling out spreadsheets. This detailed work, while essential, is time-consuming and can divert your experts from high-value strategic analysis. Especially under the pressure of tight deadlines and heavy workloads, this manual process becomes prone to human error and can struggle to keep pace with the speed of your business, creating potential risks.
           </p>
         </div>
         
