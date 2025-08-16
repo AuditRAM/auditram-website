@@ -10,16 +10,16 @@ const Header = () => {
               AuditRAM
             </div>
             <nav className="hidden md:flex space-x-6">
-              <a href="#features" className="text-foreground hover:text-primary transition-smooth">
+              <a href="/#features" className="text-foreground hover:text-primary transition-smooth">
                 Features
               </a>
-              <a href="#use-cases" className="text-foreground hover:text-primary transition-smooth">
+              <a href="/#use-cases" className="text-foreground hover:text-primary transition-smooth">
                 Use Cases
               </a>
-              <a href="#pricing" className="text-foreground hover:text-primary transition-smooth">
+              <a href="/pricing" className="text-foreground hover:text-primary transition-smooth">
                 Pricing
               </a>
-              <a href="#company" className="text-foreground hover:text-primary transition-smooth">
+              <a href="/company" className="text-foreground hover:text-primary transition-smooth">
                 Company
               </a>
             </nav>
