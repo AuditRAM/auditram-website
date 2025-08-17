@@ -15,15 +15,14 @@ const CTA = () => {
           </p>
           
           <div className="flex justify-center pt-8">
-            <ContactDialog
-              trigger={
-                <Button variant="outline-hero" size="lg" className="bg-white text-primary hover:bg-gray-100">
-                  Book Your Personalized Demo
-                </Button>
-              }
-              title="Book Your Personalized Demo"
-              isDemo={true}
-            />
+            <Button 
+              variant="outline-hero" 
+              size="lg" 
+              className="bg-white text-primary hover:bg-gray-100"
+              onClick={() => window.open('https://schedule.fillout.com/t/9vawUh57cXus', '_blank')}
+            >
+              Book Your Personalized Demo
+            </Button>
           </div>
           
           <div className="pt-8 text-sm opacity-75">

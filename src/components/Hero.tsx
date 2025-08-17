@@ -19,15 +19,13 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <ContactDialog
-                trigger={
-                  <Button variant="hero" size="lg">
-                    Book a Demo
-                  </Button>
-                }
-                title="Book a Demo"
-                isDemo={true}
-              />
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => window.open('https://schedule.fillout.com/t/9vawUh57cXus', '_blank')}
+              >
+                Book a Demo
+              </Button>
               <Button variant="outline-hero" size="lg">
                 Watch It Work (2-min video)
               </Button>
