@@ -1,7 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ContactDialog from "@/components/ContactDialog";
-import CalendarDialog from "@/components/CalendarDialog";
 
 const Company = () => {
   return (
@@ -60,14 +59,13 @@ const Company = () => {
                     title="Contact AuditRAM"
                   />
                   
-                  <CalendarDialog
-                    trigger={
-                      <Button className="w-full" size="lg">
-                        Schedule a Demo
-                      </Button>
-                    }
-                    title="Schedule a Demo"
-                  />
+                  <Button 
+                    className="w-full" 
+                    size="lg"
+                    onClick={() => window.location.href = '/book-demo'}
+                  >
+                    Schedule a Demo
+                  </Button>
                 </div>
               </div>
               

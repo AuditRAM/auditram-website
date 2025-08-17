@@ -29,6 +29,13 @@ const Header = () => {
             <Button variant="ghost" className="hidden sm:inline-flex">
               Sign In
             </Button>
+            <Button 
+              variant="default" 
+              className="hidden sm:inline-flex"
+              onClick={() => window.location.href = '/book-demo'}
+            >
+              Book a Demo
+            </Button>
           </div>
         </div>
       </div>
