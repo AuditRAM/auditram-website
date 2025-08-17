@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import ContactDialog from "@/components/ContactDialog";
+import CalendarDialog from "@/components/CalendarDialog";
 
 const CTA = () => {
   return (
@@ -15,14 +15,18 @@ const CTA = () => {
           </p>
           
           <div className="flex justify-center pt-8">
-            <Button 
-              variant="outline-hero" 
-              size="lg" 
-              className="bg-white text-primary hover:bg-gray-100"
-              onClick={() => window.open('https://schedule.fillout.com/t/9vawUh57cXus', '_blank')}
-            >
-              Book Your Personalized Demo
-            </Button>
+            <CalendarDialog
+              trigger={
+                <Button 
+                  variant="outline-hero" 
+                  size="lg" 
+                  className="bg-white text-primary hover:bg-gray-100"
+                >
+                  Book Your Personalized Demo
+                </Button>
+              }
+              title="Book Your Personalized Demo"
+            />
           </div>
           
           <div className="pt-8 text-sm opacity-75">

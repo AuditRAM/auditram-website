@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ContactDialog from "@/components/ContactDialog";
+import CalendarDialog from "@/components/CalendarDialog";
 
 const Company = () => {
   return (
@@ -59,14 +60,13 @@ const Company = () => {
                     title="Contact AuditRAM"
                   />
                   
-                  <ContactDialog
+                  <CalendarDialog
                     trigger={
                       <Button className="w-full" size="lg">
                         Schedule a Demo
                       </Button>
                     }
                     title="Schedule a Demo"
-                    isDemo={true}
                   />
                 </div>
               </div>

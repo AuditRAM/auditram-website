@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import heroImage from "@/assets/ai-automation-hero.jpg";
-import ContactDialog from "@/components/ContactDialog";
+import CalendarDialog from "@/components/CalendarDialog";
 
 const Hero = () => {
   return (
@@ -19,13 +19,14 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="hero" 
-                size="lg"
-                onClick={() => window.open('https://schedule.fillout.com/t/9vawUh57cXus', '_blank')}
-              >
-                Book a Demo
-              </Button>
+              <CalendarDialog
+                trigger={
+                  <Button variant="hero" size="lg">
+                    Book a Demo
+                  </Button>
+                }
+                title="Schedule Your Demo"
+              />
               <Button variant="outline-hero" size="lg">
                 Watch It Work (2-min video)
               </Button>
