@@ -10,11 +10,11 @@ const Header = () => {
               AuditRAM
             </div>
             <nav className="hidden md:flex space-x-6">
-              <a href="/#features" className="text-foreground hover:text-primary transition-smooth">
-                Product
+              <a href="/platform" className="text-foreground hover:text-primary transition-smooth">
+                Platform
               </a>
-              <a href="/#use-cases" className="text-foreground hover:text-primary transition-smooth">
-                Use Cases
+              <a href="/solutions" className="text-foreground hover:text-primary transition-smooth">
+                Solutions
               </a>
               <a href="/pricing" className="text-foreground hover:text-primary transition-smooth">
                 Pricing
