@@ -29,9 +29,6 @@ const Header = () => {
             <Button variant="ghost" className="hidden sm:inline-flex">
               Sign In
             </Button>
-            <Button variant="default">
-              Get Started
-            </Button>
           </div>
         </div>
       </div>

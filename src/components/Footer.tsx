@@ -23,23 +23,13 @@ const Footer = () => {
               </a>
             </div>
             <div className="text-sm text-background/60">
-              © 2024 AuditRAM. All rights reserved.
+              © 2025 AuditRAM. All rights reserved.
             </div>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2 text-sm text-background/80">
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-background/80">
-              <li><a href="#" className="hover:text-background transition-smooth">About</a></li>
-              <li><a href="#" className="hover:text-background transition-smooth">Contact</a></li>
-              <li><a href="#" className="hover:text-background transition-smooth">Support</a></li>
-              <li><a href="#" className="hover:text-background transition-smooth">Privacy</a></li>
             </ul>
           </div>
         </div>
