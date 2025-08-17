@@ -14,7 +14,7 @@ const Hero = () => {
                 <span className="text-foreground">Automate Your</span> <span className="bg-gradient-primary bg-clip-text text-transparent">Control Testing</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-                Test hours of control testing into minutes. Our Intelligent Test Automation platform eliminates manual repetitive work to free-up your audit team for high-impact analysis. Use as a standalone solution or integrate with your existing audit management tools.
+                AuditRam's AI-powered platform executes hours of complex control testing in minutes, eliminating repetitive work and providing results you can trust. Integrate with your existing tools or use it as a powerful standalone solution.
               </p>
             </div>
             
