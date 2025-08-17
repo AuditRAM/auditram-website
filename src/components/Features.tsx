@@ -16,7 +16,7 @@ const Features = () => {
     {
       icon: <Puzzle className="h-8 w-8 text-primary" />,
       title: "Seamless Integration",
-      description: "Our adaptive architecture is built to enhance, not replace. Bolt on to your existing GRC / audit management platform, or use it as a powerful standalone tool. We fit into your ecosystem."
+      description: "Our adaptive architecture is built to enhance, not replace. Bolt on to your existing GRC / audit management platform, or use it as a powerful standalone platform. We fit into your ecosystem."
     }
   ];
 
@@ -28,7 +28,7 @@ const Features = () => {
             Stop Drowning in Manual Control Testing
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Your most skilled auditors and compliance professionals spend countless hours on the necessary, repetitive tasks of manually testing controls and filling out spreadsheets. This detailed work, while essential, is time-consuming and can divert your experts from high-value strategic analysis. Especially under the pressure of tight deadlines and heavy workloads, this manual process becomes prone to human error and can struggle to keep pace with the speed of your business, creating potential risks.
+            Your most skilled auditors and compliance professionals are spending countless hours on repetitive manual tests instead of high-value strategic analysis. While essential, this process is a drain on your best talent and a bottleneck for your business. Under the pressure of deadlines, it becomes prone to costly human errors and can't keep pace with your operations, exposing you to unnecessary risk.
           </p>
         </div>
         

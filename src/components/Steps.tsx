@@ -16,7 +16,7 @@ const Steps = () => {
     {
       icon: <Shield className="h-8 w-8 text-primary" />,
       title: "Assure",
-      description: "Test results and evidence are automatically populated back into your GRC platform, giving you a real-time view of your compliance posture."
+      description: "Test results and evidence are automatically populated back into your GRC platform or can be downloaded as spreadsheet files from standalone platform."
     }
   ];
 
