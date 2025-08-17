@@ -59,15 +59,13 @@ const Company = () => {
                     title="Contact AuditRAM"
                   />
                   
-                  <ContactDialog
-                    trigger={
-                      <Button className="w-full" size="lg">
-                        Schedule a Demo
-                      </Button>
-                    }
-                    title="Schedule a Demo"
-                    isDemo={true}
-                  />
+                  <Button 
+                    className="w-full" 
+                    size="lg"
+                    onClick={() => window.open('https://schedule.fillout.com/t/9vawUh57cXus', '_blank')}
+                  >
+                    Schedule a Demo
+                  </Button>
                 </div>
               </div>
               
