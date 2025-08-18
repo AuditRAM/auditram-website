@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,87 +12,25 @@ interface ContactDialogProps {
 }
 
 const ContactDialog = ({ trigger, title, isDemo = false }: ContactDialogProps) => {
-  const [open, setOpen] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted");
-    setOpen(false);
-  };
-
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog>
       <DialogTrigger asChild>
         {trigger}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[660px] max-h-[980px] overflow-hidden">
         <DialogHeader>
           <DialogTitle className="text-foreground">{title}</DialogTitle>
         </DialogHeader>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="space-y-2">
-            <Label htmlFor="name" className="text-foreground">Full Name</Label>
-            <Input id="name" placeholder="Enter your full name" required />
-          </div>
-          
-          <div className="space-y-2">
-            <Label htmlFor="email" className="text-foreground">Email</Label>
-            <Input id="email" type="email" placeholder="Enter your email" required />
-          </div>
-          
-          <div className="space-y-2">
-            <Label htmlFor="company" className="text-foreground">Company</Label>
-            <Input id="company" placeholder="Enter your company name" required />
-          </div>
-          
-          <div className="space-y-2">
-            <Label htmlFor="role" className="text-foreground">Role</Label>
-            <Select required>
-              <SelectTrigger>
-                <SelectValue placeholder="Select your role" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="auditor">Auditor</SelectItem>
-                <SelectItem value="compliance-officer">Compliance Officer</SelectItem>
-                <SelectItem value="risk-manager">Risk Manager</SelectItem>
-                <SelectItem value="it-manager">IT Manager</SelectItem>
-                <SelectItem value="other">Other</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-          
-          {isDemo && (
-            <div className="space-y-2">
-              <Label htmlFor="preferred-time" className="text-foreground">Preferred Demo Time</Label>
-              <Select required>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select preferred time" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="morning">Morning (9 AM - 12 PM)</SelectItem>
-                  <SelectItem value="afternoon">Afternoon (12 PM - 5 PM)</SelectItem>
-                  <SelectItem value="evening">Evening (5 PM - 8 PM)</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          )}
-          
-          <div className="space-y-2">
-            <Label htmlFor="message" className="text-foreground">
-              {isDemo ? "Additional Notes" : "Message"}
-            </Label>
-            <Textarea 
-              id="message" 
-              placeholder={isDemo ? "Any specific areas you'd like to focus on during the demo..." : "Tell us about your control testing needs..."}
-              className="min-h-[100px]"
-            />
-          </div>
-          
-          <Button type="submit" className="w-full">
-            {isDemo ? "Schedule Demo" : "Send Message"}
-          </Button>
-        </form>
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfTrI8njpz6vQc_pO4k_aSqVL-1FJ4_w79RCRIyA7pKzphaag/viewform?embedded=true" 
+          width="640" 
+          height="959" 
+          frameBorder="0" 
+          marginHeight={0} 
+          marginWidth={0}
+        >
+          Loading…
+        </iframe>
       </DialogContent>
     </Dialog>
   );

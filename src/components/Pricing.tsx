@@ -22,7 +22,7 @@ const Pricing = () => {
                 Per Control Test
               </CardTitle>
               <div className="text-5xl font-bold text-primary mb-4">
-                $99
+                $49
               </div>
               <p className="text-muted-foreground">
                 Flat rate per automated control test execution
