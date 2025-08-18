@@ -7,7 +7,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8">
             <div className="text-2xl font-bold text-primary">
-              AuditRAM
+              <a href="/" className="hover:text-primary transition-smooth">
+                AuditRAM
+              </a>
             </div>
             <nav className="hidden md:flex space-x-6">
               <a href="/platform" className="text-foreground hover:text-primary transition-smooth">
