@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
-import heroImage from "@/assets/ai-automation-hero.jpg";
 
 const Hero = () => {
   return (
@@ -45,7 +44,7 @@ const Hero = () => {
           <div className="relative">
             <div className="relative z-10">
               <img 
-                src={heroImage} 
+                src="/ai-automation-hero.jpg" 
                 alt="AuditRAM AI-Powered Control Testing Automation Platform"
                 className="w-full h-auto rounded-lg shadow-elegant"
               />
