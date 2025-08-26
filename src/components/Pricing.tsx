@@ -19,13 +19,13 @@ const Pricing = () => {
           <Card className="shadow-card hover:shadow-elegant transition-smooth">
             <CardHeader className="text-center pb-8">
               <CardTitle className="text-3xl font-bold text-foreground mb-2">
-                Per Control Test
+                Starting from
               </CardTitle>
               <div className="text-5xl font-bold text-primary mb-4">
                 $49
               </div>
               <p className="text-muted-foreground">
-                Flat rate per automated control test execution
+                per automated control test execution
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
