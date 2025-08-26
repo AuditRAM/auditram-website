@@ -61,10 +61,10 @@ const Pricing = () => {
                   Start Free Trial
                 </Button>
               </div>
-              
+            /*  
               <div className="text-center text-sm text-muted-foreground">
                 7 days free trial • No setup fees
-              </div>
+              </div> */
             </CardContent>
           </Card>
         </div>
