@@ -23,10 +23,11 @@ const CTA = () => {
               Book Your Personalized Demo
             </Button>
           </div>
-          
-          {/* <div className="pt-8 text-sm opacity-75">
+          {/* 
+          <div className="pt-8 text-sm opacity-75">
             <p>✓ 7 days free trial  ✓ Enterprise support available</p>
-          </div>*/}
+          </div>
+          */}
         </div>
       </div>
     </section>
