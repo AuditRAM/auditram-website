@@ -6,14 +6,19 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8">
+            <div className="flex items-center">
+              <a href="/" className="hover:opacity-80 transition-smooth">
+                <img src="/headerlogo.jpg" alt="AuditRAM Logo" className="h-6 w-auto" />
+              </a>
             {/* <div className="flex items-center space-x-2">
-            <img src="/Headerlogo.png" alt="AuditRAM Logo" className="w-8 h-8" />*/}
+            <img src="/Headerlogo.png" alt="AuditRAM Logo" className="w-8 h-8" />
               <div className="text-2xl font-bold text-primary">
                 <a href="/" className="hover:text-primary transition-smooth">
                   AuditRAM
                 </a>
               </div>
-            {/* </div>*/}
+            */}
+            </div>
             <nav className="hidden md:flex space-x-6">
               <a href="/platform" className="text-foreground hover:text-primary transition-smooth">
                 Platform
