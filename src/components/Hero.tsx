@@ -39,8 +39,9 @@ const Hero = () => {
                 <span className="text-sm text-muted-foreground">Enterprise ready</span>
               </div>
             </div>
+            */}
           </div>
-          */}
+          
           
           <div className="relative">
             <div className="relative z-10">
