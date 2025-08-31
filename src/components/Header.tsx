@@ -7,7 +7,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8">
             <div className="flex items-center space-x-2">
-            <img src="/Header logo.png" alt="AuditRAM Logo" className="w-8 h-8" />
+            <img src="/Headerlogo.png" alt="AuditRAM Logo" className="w-8 h-8" />
               <div className="text-2xl font-bold text-primary">
                 <a href="/" className="hover:text-primary transition-smooth">
                   AuditRAM
