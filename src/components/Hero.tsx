@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                <span className="text-foreground">Automate Your</span> <span className="bg-gradient-primary bg-clip-text text-transparent">Control Testing</span>
+                <span className="text-foreground">Accelerate Your</span> <span className="bg-gradient-primary bg-clip-text text-transparent">Control Testing</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
                 AuditRam's AI-powered platform executes hours of complex control testing in minutes, eliminating repetitive work and providing results you can trust. Integrate with your existing tools or use it as a powerful standalone solution.
