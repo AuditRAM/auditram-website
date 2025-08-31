@@ -28,8 +28,8 @@ const Hero = () => {
                 Watch It Work (1-min video)
               </Button>
             </div>
-            
-            {/* <div className="flex flex-col sm:flex-row gap-6 pt-4">
+            {/* 
+            <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-primary" />
                 <span className="text-sm text-muted-foreground">7 days free trial</span>
@@ -39,7 +39,8 @@ const Hero = () => {
                 <span className="text-sm text-muted-foreground">Enterprise ready</span>
               </div>
             </div>
-          </div>*/}
+          </div>
+          */}
           
           <div className="relative">
             <div className="relative z-10">
