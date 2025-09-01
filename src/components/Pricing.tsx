@@ -8,31 +8,29 @@ const Pricing = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Simple, Transparent Pricing
+            Choose Your Service Tier
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Pay only for what you use. No hidden fees, no complex tiers.
+            Flexible service options tailored to your audit needs and organizational scale.
           </p>
         </div>
         
-        <div className="max-w-md mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Starter Tier */}
           <Card className="shadow-card hover:shadow-elegant transition-smooth">
-            <CardHeader className="text-center pb-8">
-              <CardTitle className="text-3xl font-bold text-foreground mb-2">
-                Starting from
+            <CardHeader className="text-center pb-6">
+              <CardTitle className="text-2xl font-bold text-foreground mb-4">
+                Starter
               </CardTitle>
-              <div className="text-5xl font-bold text-primary mb-4">
-                $49
-              </div>
               <p className="text-muted-foreground">
-                per automated control test execution
+                Perfect for small teams getting started with AI-powered control testing
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">AI recommendations for sample attributes and test procedures</span>
+                  <span className="text-foreground">Basic AI recommendations</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
@@ -40,11 +38,50 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Workplan generation</span>
+                  <span className="text-foreground">Standard workplan generation</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">10 user accounts for standalone application</span>
+                  <span className="text-foreground">Up to 5 user accounts</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Email support</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Professional Tier */}
+          <Card className="shadow-card hover:shadow-elegant transition-smooth border-primary/20">
+            <CardHeader className="text-center pb-6">
+              <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary mb-4">
+                Most Popular
+              </div>
+              <CardTitle className="text-2xl font-bold text-foreground mb-4">
+                Professional
+              </CardTitle>
+              <p className="text-muted-foreground">
+                Comprehensive solution for growing organizations with advanced audit needs
+              </p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Advanced AI recommendations</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Automated test execution</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Enhanced workplan generation</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Up to 25 user accounts</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
@@ -52,19 +89,61 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Enterprise support</span>
+                  <span className="text-foreground">Priority support</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Custom reporting</span>
                 </div>
               </div>
-              {/*  
-              <div className="pt-6">
-                <Button className="w-full" size="lg">
-                  Start Free Trial
-                </Button>
+            </CardContent>
+          </Card>
+
+          {/* Enterprise Tier */}
+          <Card className="shadow-card hover:shadow-elegant transition-smooth">
+            <CardHeader className="text-center pb-6">
+              <CardTitle className="text-2xl font-bold text-foreground mb-4">
+                Enterprise
+              </CardTitle>
+              <p className="text-muted-foreground">
+                Full-scale solution for large organizations with complex compliance requirements
+              </p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Premium AI recommendations</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Automated test execution</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Advanced workplan generation</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Unlimited user accounts</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Full integration suite</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">24/7 dedicated support</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">Custom deployment options</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-foreground">SLA guarantees</span>
+                </div>
               </div>
-             
-              <div className="text-center text-sm text-muted-foreground">
-                7 days free trial • No setup fees
-              </div> */}
             </CardContent>
           </Card>
         </div>
