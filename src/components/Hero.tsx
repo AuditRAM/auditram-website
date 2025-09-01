@@ -12,7 +12,7 @@ const Hero = () => {
                 <span className="text-foreground">Accelerate Your</span> <span className="bg-gradient-primary bg-clip-text text-transparent">Control Testing</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-                AuditRam's AI-powered platform executes hours of complex control testing in minutes, eliminating repetitive work and providing results you can trust. Integrate with your existing tools or use it as a powerful standalone solution.
+                Built AI-Native from day one, AuditRam transforms control testing through intelligent agents that think, learn, and execute like your best auditors—but at enterprise scale. What once took hours now happens in minutes, with built-in audit intelligence delivering results you can trust. Seamlessly integrate with your existing audit management system or deploy as a standalone platform designed for the AI-first future of compliance.
               </p>
             </div>
             
