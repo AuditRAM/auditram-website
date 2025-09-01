@@ -23,14 +23,14 @@ const Pricing = () => {
                 Starter
               </CardTitle>
               <p className="text-muted-foreground">
-                Perfect for small teams getting started with AI-powered control testing
+                Perfect for small teams getting started with AI-Native control testing
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Basic AI recommendations</span>
+                  <span className="text-foreground">AI recommendations</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
@@ -52,17 +52,14 @@ const Pricing = () => {
             </CardContent>
           </Card>
 
-          {/* Professional Tier */}
-          <Card className="shadow-card hover:shadow-elegant transition-smooth border-primary/20">
+          {/* Enterprise Tier */}
+          <Card className="shadow-card hover:shadow-elegant transition-smooth">
             <CardHeader className="text-center pb-6">
-              <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary mb-4">
-                Most Popular
-              </div>
               <CardTitle className="text-2xl font-bold text-foreground mb-4">
-                Professional
+                Enterprise
               </CardTitle>
               <p className="text-muted-foreground">
-                Comprehensive solution for growing organizations with advanced audit needs
+                Full-scale AI-Native platform for large organizations
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -77,47 +74,43 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Enhanced workplan generation</span>
+                  <span className="text-foreground">Advanced workplan generation</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Up to 25 user accounts</span>
+                  <span className="text-foreground">30 user accounts</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Integration capabilities</span>
+                  <span className="text-foreground">Bolt-on integration options</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
                   <span className="text-foreground">Priority support</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Custom reporting</span>
-                </div>
               </div>
             </CardContent>
           </Card>
 
-          {/* Enterprise Tier */}
+          {/* Audit Firms Tier */}
           <Card className="shadow-card hover:shadow-elegant transition-smooth">
             <CardHeader className="text-center pb-6">
               <CardTitle className="text-2xl font-bold text-foreground mb-4">
-                Enterprise
+                Audit Firms
               </CardTitle>
               <p className="text-muted-foreground">
-                Full-scale solution for large organizations with complex compliance requirements
+                Built for audit firms managing multiple client engagements with AI-Native efficiency
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Premium AI recommendations</span>
+                  <span className="text-foreground">Advanced AI recommendations across client portfolios</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Automated test execution</span>
+                  <span className="text-foreground">Automated test execution with client-specific contexts</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
@@ -125,23 +118,23 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Unlimited user accounts</span>
+                  <span className="text-foreground">Up to 10 user accounts per client</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Full integration suite</span>
+                  <span className="text-foreground">Client data segregation & security</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">24/7 dedicated support</span>
+                  <span className="text-foreground">Bolt-on integration options</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Custom deployment options</span>
+                  <span className="text-foreground">Engagement-level reporting</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">SLA guarantees</span>
+                  <span className="text-foreground">Priority support</span>
                 </div>
               </div>
             </CardContent>
