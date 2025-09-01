@@ -24,9 +24,9 @@ const Hero = () => {
               >
                 Book a Demo
               </Button>
-              <Button variant="outline-hero" size="lg">
+              {/*              <Button variant="outline-hero" size="lg">
                 Watch It Work (1-min video)
-              </Button>
+              </Button> */}
             </div>
             {/* 
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
