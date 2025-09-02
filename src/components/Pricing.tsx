@@ -99,7 +99,7 @@ const Pricing = () => {
                 Audit Firms
               </CardTitle>
               <p className="text-muted-foreground">
-                Built for audit firms managing multiple client engagements with AI-Native efficiency
+                For audit firms managing multiple clients with AI-Native efficiency
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
