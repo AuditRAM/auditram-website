@@ -106,11 +106,11 @@ const Pricing = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Advanced AI recommendations across client portfolios</span>
+                  <span className="text-foreground">Advanced AI recommendations across</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Automated test execution with client-specific contexts</span>
+                  <span className="text-foreground">Automated test execution</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
@@ -118,7 +118,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="text-foreground">Up to 10 user accounts per client</span>
+                  <span className="text-foreground">10 user accounts per client</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-primary" />
