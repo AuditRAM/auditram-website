@@ -25,7 +25,7 @@ const Footer = () => {
               */}
             </div>
             <div className="text-sm text-background/60">
-              © 2025 AuditRAM. All rights reserved.
+              © 2025 AuditRAM Inc. All rights reserved.
             </div>
           </div>
         </div>
