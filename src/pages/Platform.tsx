@@ -102,10 +102,10 @@ const Platform = () => {
                 <CardTitle className="text-2xl">GRC Platforms</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <div className="flex justify-center items-center space-x-8 mb-6">
-                  <div className="text-lg font-semibold text-foreground">AuditBoard</div>
+              {/*  <div className="flex justify-center items-center space-x-8 mb-6">
+                   <div className="text-lg font-semibold text-foreground">AuditBoard</div>
                   <div className="text-lg font-semibold text-foreground">Workiva</div>
-                </div>
+                </div> */}
                 <p className="text-muted-foreground">
                   We are actively building pre-built connectors for leading GRC platforms. Soon, you'll be able to seamlessly sync your control library and push test results and documentation directly into your system of record, eliminating the manual process of updating your GRC platform.
                 </p>
