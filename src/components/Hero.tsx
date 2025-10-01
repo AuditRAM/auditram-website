@@ -24,13 +24,9 @@ const Hero = () => {
               >
                 Book a Demo
               </Button>
-              <Button 
-                variant="outline-hero" 
-                size="lg"
-                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfjATnWS3GSkapGvCpEEYxoqzgIc1BENXNNoGY8j3DrHZBwmg/viewform?usp=dialog', '_blank')}
-              >
-                Join the Beta Waitlist
-              </Button>
+              {/*              <Button variant="outline-hero" size="lg">
+                Watch It Work (1-min video)
+              </Button> */}
             </div>
             {/* 
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
