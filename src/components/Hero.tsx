@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import WaitlistDialog from "./WaitlistDialog";
 
 const Hero = () => {
   return (
@@ -24,9 +25,13 @@ const Hero = () => {
               >
                 Book a Demo
               </Button>
-              {/*              <Button variant="outline-hero" size="lg">
-                Watch It Work (1-min video)
-              </Button> */}
+              <WaitlistDialog
+                trigger={
+                  <Button variant="outline-hero" size="lg">
+                    Join the Beta Waitlist
+                  </Button>
+                }
+              />
             </div>
             {/* 
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
