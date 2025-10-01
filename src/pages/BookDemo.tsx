@@ -19,7 +19,7 @@ const BookDemo = () => {
           <div className="max-w-6xl mx-auto">
             <div className="bg-background border border-border rounded-lg shadow-card overflow-hidden">
               <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1ccMaTMYDrB0QxXld-Oh77Xpk1GFm53P3oPz-MNGrnMaEHnH2K-4BQBcTtzBK6ZYzkpH94Kuvr?gv=true" 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2mKruMC0l3Gs46XKeWNV4cy9X5ttR6hCd1YRMe24UHXeqA7beROgTjdNDYVorno_vDojVzSK-H?gv=true" 
                 style={{ border: 0 }} 
                 width="100%" 
                 height="800" 
