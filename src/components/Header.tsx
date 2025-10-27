@@ -37,7 +37,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button 
               variant="ghost"
-              onClick={() => window.location.href = '/sign-in'}
+              onClick={() => window.open('https://app.auditram.com/login', '_blank')}
             >
               Sign In
             </Button>
@@ -54,7 +54,7 @@ const Header = () => {
             <Button 
               variant="ghost"
               size="sm"
-              onClick={() => window.location.href = '/sign-in'}
+              onClick={() => window.open('https://app.auditram.com/login', '_blank')}
             >
               Sign In
             </Button>
