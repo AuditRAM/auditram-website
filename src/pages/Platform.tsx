@@ -29,15 +29,15 @@ const Platform = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-foreground mb-6">
-              The Intelligent Engine for Augmented Control Testing
+              Auto-Test Engine
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Our platform is purpose-built to augment the execution of your internal controls, offering the flexibility to work as a powerful standalone solution or as an integrated layer in your existing GRC ecosystem.
+              Our AI engine connects to your business applications to perform complex test procedures, freeing your experts to apply their critical judgment where it matters most. We deliver a complete, auditable trail of results, providing true work execution that intelligently pairs the power of AI with the irreplaceable expertise of your team.
             </p>
           </div>
         </div>
       </section>
-
+/*
       {/* Auto-Test Engine Section */}
       <section id="auto-test-engine" className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -49,7 +49,7 @@ const Platform = () => {
               Our AI engine connects to your business applications to perform complex test procedures, freeing your experts to apply their critical judgment where it matters most. We deliver a complete, auditable trail of results, providing true work execution that intelligently pairs the power of AI with the irreplaceable expertise of your team.
             </p>
           </div>
-
+*/
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">
               AI That Works Like Your Best Auditor
