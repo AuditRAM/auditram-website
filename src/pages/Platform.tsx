@@ -31,25 +31,9 @@ const Platform = () => {
             <h1 className="text-5xl font-bold text-foreground mb-6">
               The Intelligent Engine for Augmented Control Testing
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               Our platform is purpose-built to augment the execution of your internal controls, offering the flexibility to work as a powerful standalone solution or as an integrated layer in your existing GRC ecosystem.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="hero" 
-                size="lg"
-                onClick={() => document.getElementById('auto-test-engine')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Auto-Test Engine
-              </Button>
-              <Button 
-                variant="outline-hero" 
-                size="lg"
-                onClick={() => document.getElementById('socrr')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                SOCRR
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -75,7 +59,7 @@ const Platform = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
             <Card className="border-border">
               <CardHeader className="text-center">
                 <div className="mx-auto mb-4 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
@@ -118,16 +102,12 @@ const Platform = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
 
-      {/* Integrations Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
+          {/* Flexible Deployment - now part of Auto-Test Engine */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
+            <h3 className="text-3xl font-bold text-foreground mb-6">
               Flexible Deployment and Seamless Connections
-            </h2>
+            </h3>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
               Our platform is designed to fit your unique environment. Deploy it as a powerful, standalone control testing engine, or integrate it as the execution layer for your existing GRC program. With a growing library of pre-built connectors, we enhance your current systems without disrupting your established workflows.
             </p>
