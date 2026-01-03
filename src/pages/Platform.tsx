@@ -24,20 +24,20 @@ const Platform = () => {
     <div className="min-h-screen">
       <Header />
       
-      {/* Platform Overview Section */}
-      <section className="py-20 bg-gradient-to-br from-background via-background/80 to-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-foreground mb-6">
-              Auto-Test Engine
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Our AI engine connects to your business applications to perform complex test procedures, freeing your experts to apply their critical judgment where it matters most. We deliver a complete, auditable trail of results, providing true work execution that intelligently pairs the power of AI with the irreplaceable expertise of your team.
-            </p>
-          </div>
-        </div>
-      </section>
-/*
+//      {/* Platform Overview Section */}
+//      <section className="py-20 bg-gradient-to-br from-background via-background/80 to-primary/5">
+//        <div className="container mx-auto px-4">
+//          <div className="max-w-4xl mx-auto text-center">
+//            <h1 className="text-5xl font-bold text-foreground mb-6">
+//              Auto-Test Engine
+//            </h1>
+//            <p className="text-xl text-muted-foreground leading-relaxed">
+//              Our AI engine connects to your business applications to perform complex test procedures, freeing your experts to apply their critical judgment where it matters most. We deliver a complete, auditable trail of results, providing true work execution that intelligently pairs the power of AI with the irreplaceable expertise of your team.
+//            </p>
+//          </div>
+//        </div>
+//      </section>
+
       {/* Auto-Test Engine Section */}
       <section id="auto-test-engine" className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -49,7 +49,7 @@ const Platform = () => {
               Our AI engine connects to your business applications to perform complex test procedures, freeing your experts to apply their critical judgment where it matters most. We deliver a complete, auditable trail of results, providing true work execution that intelligently pairs the power of AI with the irreplaceable expertise of your team.
             </p>
           </div>
-*/
+
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-foreground mb-4">
               AI That Works Like Your Best Auditor
