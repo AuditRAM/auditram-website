@@ -1,9 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isPlatformOpen, setIsPlatformOpen] = useState(false);
 
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50">
@@ -18,9 +25,24 @@ const Header = () => {
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
-              <a href="/platform" className="text-foreground hover:text-primary transition-smooth">
-                Platform
-              </a>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-primary transition-smooth outline-none">
+                  Platform
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start">
+                  <DropdownMenuItem asChild>
+                    <a href="/platform#auto-test-engine" className="cursor-pointer">
+                      Auto-Test Engine
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="/platform#socrr" className="cursor-pointer">
+                      SOCRR
+                    </a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
               <a href="/solutions" className="text-foreground hover:text-primary transition-smooth">
                 Solutions
               </a>
@@ -73,13 +95,36 @@ const Header = () => {
           <div className="md:hidden border-t border-border bg-background">
             <nav className="px-4 py-4 space-y-3">
               <div className="text-xs text-muted-foreground mb-2">Navigate to:</div>
-              <a 
-                href="/platform" 
-                className="block py-2 text-foreground hover:text-primary transition-smooth border-b border-muted"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Platform
-              </a>
+              
+              {/* Platform with submenu */}
+              <div className="border-b border-muted">
+                <button 
+                  className="flex items-center justify-between w-full py-2 text-foreground hover:text-primary transition-smooth"
+                  onClick={() => setIsPlatformOpen(!isPlatformOpen)}
+                >
+                  Platform
+                  <ChevronDown className={`h-4 w-4 transition-transform ${isPlatformOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isPlatformOpen && (
+                  <div className="pl-4 pb-2 space-y-2">
+                    <a 
+                      href="/platform#auto-test-engine" 
+                      className="block py-1 text-sm text-muted-foreground hover:text-primary transition-smooth"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Auto-Test Engine
+                    </a>
+                    <a 
+                      href="/platform#socrr" 
+                      className="block py-1 text-sm text-muted-foreground hover:text-primary transition-smooth"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      SOCRR
+                    </a>
+                  </div>
+                )}
+              </div>
+              
               <a 
                 href="/solutions" 
                 className="block py-2 text-foreground hover:text-primary transition-smooth border-b border-muted"
