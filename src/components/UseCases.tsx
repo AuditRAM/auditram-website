@@ -1,23 +1,38 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Building2, Layers } from "lucide-react";
-import ContactDialog from "@/components/ContactDialog";
+import { useNavigate } from "react-router-dom";
 
 const UseCases = () => {
+  const navigate = useNavigate();
+
   const useCases = [
     {
       icon: <Building2 className="h-12 w-12 text-primary" />,
       title: "For Internal Audit & GRC Teams",
       description: "Free your team from repetitive work, reduce compliance costs, and provide a higher level of assurance to your board. Supercharge your existing GRC investment and transform your audit function into a strategic advisor.",
-      cta: "Learn More for GRC Teams"
+      cta: "Learn More for GRC Teams",
+      link: "/solutions#grc-teams"
     },
     {
       icon: <Layers className="h-12 w-12 text-primary" />,
       title: "For Audit & Advisory Firms",
       description: "Combat the talent shortage and boost engagement profitability. Use our platform to standardize testing across your client portfolio and deliver higher-value, more efficient audits.",
-      cta: "Learn More for Audit Firms"
+      cta: "Learn More for Audit Firms",
+      link: "/solutions#audit-firms"
     }
   ];
+
+  const handleNavigate = (link: string) => {
+    const [path, hash] = link.split('#');
+    navigate(path);
+    setTimeout(() => {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   return (
     <section className="py-20 bg-gradient-subtle">
@@ -46,15 +61,13 @@ const UseCases = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="pt-4">
-                  <ContactDialog
-                    trigger={
-                      <Button variant="outline-hero" className="w-full">
-                        {useCase.cta}
-                      </Button>
-                    }
-                    title={useCase.cta}
-                    isDemo={false}
-                  />
+                  <Button 
+                    variant="outline-hero" 
+                    className="w-full"
+                    onClick={() => handleNavigate(useCase.link)}
+                  >
+                    {useCase.cta}
+                  </Button>
                 </div>
               </CardContent>
             </Card>
