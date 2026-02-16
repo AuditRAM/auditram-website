@@ -24,7 +24,7 @@ const Platform = () => {
     <div className="min-h-screen">
       <Header />
       
-//      {/* Platform Overview Section */}
+      {/* Platform Overview Section 
 //      <section className="py-20 bg-gradient-to-br from-background via-background/80 to-primary/5">
 //        <div className="container mx-auto px-4">
 //          <div className="max-w-4xl mx-auto text-center">
@@ -36,7 +36,7 @@ const Platform = () => {
 //            </p>
 //          </div>
 //        </div>
-//      </section>
+//      </section> */}
 
       {/* Auto-Test Engine Section */}
       <section id="auto-test-engine" className="py-20 bg-background">
